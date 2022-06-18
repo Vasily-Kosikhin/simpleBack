@@ -9,7 +9,7 @@ class SimpleController {
       const text = util.inspect(req.query);
       res.json(`я бекэнд простой, получаю ${text} - вывожу ${text}`);
     } catch (error) {
-      res.status(404).json(error);
+      res.status(500).json(error);
     }
   }
   async paramsAnswer(req, res) {
@@ -18,7 +18,7 @@ class SimpleController {
       const text = util.inspect(req.params);
       res.json(`я бекэнд простой, получаю ${text} - вывожу ${text}`);
     } catch (error) {
-      res.status(404).json(error);
+      res.status(500).json(error);
     }
   }
   async multipartAnswer(req, res) {
@@ -26,7 +26,7 @@ class SimpleController {
       const text = util.inspect(req.body);
       res.json(`я бекэнд простой, получаю ${text} - вывожу ${text}`);
     } catch (error) {
-      res.status(404).json(error);
+      res.status(500).json(error);
     }
   }
   async urlencodedAnswer(req, res) {
@@ -34,7 +34,7 @@ class SimpleController {
       const text = util.inspect(req.body);
       res.json(`я бекэнд простой, получаю ${text} - вывожу ${text}`);
     } catch (error) {
-      res.status(404).json(error);
+      res.status(500).json(error);
     }
   }
   async patchAnswer(req, res) {
@@ -42,7 +42,7 @@ class SimpleController {
       const text = util.inspect(req.body);
       res.json(`я бекэнд простой, получаю ${text} - вывожу ${text}`);
     } catch (error) {
-      res.status(404).json(error);
+      res.status(500).json(error);
     }
   }
 }
